@@ -1,0 +1,106 @@
+<!doctype html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retro Site</title>
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- tailwind and daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="container mx-auto">
+    <header class="my-20">
+      <nav>
+        <!-- nav container -->
+        <div class="flex justify-between">
+          <div>
+            <img src="./src/logo.png" alt="" />
+          </div>
+
+          <!-- nav bar links -->
+          <div class="flex justify-evenly items-center gap-5">
+            <ul class="flex justify-evenly gap-5">
+              <li><a href="">home</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">edit</a></li>
+              <li><a href="">more</a></li>
+            </ul>
+            <button type="" class="btn btn-primary rounded-lg text-xl">
+              sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- banner section starts here -->
+      <div
+        id="banner-container"
+        class="text-white p-24 rounded-xl flex justify-between items-center bg-blue-950 bg-banner my-32"
+      >
+        <!-- banner text -->
+        <div class="grid gap-8">
+          <div>
+            <h1 class="text-7xl">
+              Welcome to the <br />
+              <span class="text-purple-300">ReTro </span>forum
+            </h1>
+          </div>
+          <div class="text-2xl">
+            Share your favorite opinion and win and wp <br />
+            forum coffee mug!
+          </div>
+          <!-- search bar container -->
+          <div class="flex justify-between bg-white p-2 rounded-xl">
+            <input
+              type="text"
+              placeholder="search here"
+              class="input w-full max-w-xs"
+            />
+            <button
+              type=""
+              class="btn btn-primary text-xl px-5 py-1 rounded-3xl"
+            >
+              search
+            </button>
+          </div>
+        </div>
+        <!-- banner statistics -->
+        <div class="bg-white text-black rounded-xl">
+          <ul class="grid gap-5 px-32 py-20 text-2xl">
+            <li class="list-disc">Registered Users</li>
+            <li class="list-disc">Forum</li>
+            <li class="list-disc">Topics</li>
+            <li class="list-disc">Replies</li>
+          </ul>
+        </div>
+      </div>
+      <!-- banner section ends here -->
+
+      <!-- Discussion section starts here  -->
+
+      <div class="flex flex-col gap-5 justify-center items-center my-20">
+        <h1 class="text-5xl">Let's Discuss</h1>
+        <p class="text-center text-xl">
+          Yes, you can run unit tests and view the results directly within the
+          <br />
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+
+      <!-- Discussion section ends here  -->
+    </main>
+    <footer></footer>
+
+    <!-- javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
