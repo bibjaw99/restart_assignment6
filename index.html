@@ -15,8 +15,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="container mx-auto">
-    <header class="my-20">
+  <body class="">
+    <header class="container my-20 mx-auto">
       <nav>
         <!-- nav container -->
         <div class="flex justify-between">
@@ -40,7 +40,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container mx-auto">
       <!-- banner section starts here -->
       <div
         id="banner-container"
@@ -86,7 +86,6 @@
       <!-- banner section ends here -->
 
       <!-- Discussion section starts here  -->
-
       <div class="flex flex-col gap-5 justify-center items-center my-20">
         <h1 class="text-5xl">Let's Discuss</h1>
         <p class="text-center text-xl">
@@ -96,9 +95,86 @@
         </p>
       </div>
 
+      <!-- card and title section container -->
+      <div class="grid grid-cols-3 gap-5 p-7 my-7">
+        <!-- card section -->
+        <div id="comment-container" class="my-9 grid gap-5 col-span-2"></div>
+
+        <!-- title section -->
+        <div id="read-comments-container" class="p-7 border-black rounded-xl">
+          <!-- title header -->
+          <div class="text-xl flex justify-between my-5">
+            <div class="font-extrabold">Title</div>
+            <div>Marked as read (<span id="mark-counter">x</span>)</div>
+          </div>
+          <div id="read-msg-container" class="grid gap-4"></div>
+        </div>
+      </div>
       <!-- Discussion section ends here  -->
+
+      <!-- join us start -->
+      <div
+        class="text-white p-24 rounded-xl flex justify-between items-center bg-blue-950 bg-banner my-32"
+      >
+        <!-- banner text -->
+        <div class="grid gap-8">
+          <div>
+            <h1 class="text-7xl">
+              Welcome to the <br />
+              <span class="text-purple-300">ReTro </span>forum
+            </h1>
+          </div>
+          <div class="text-2xl">
+            Share your favorite opinion and win and wp <br />
+            forum coffee mug!
+          </div>
+          <button
+            type=""
+            class="btn btn-primary px-20 text-2xl text-white rounded-2xl"
+          >
+            Register Now
+          </button>
+        </div>
+        <!-- banner statistics -->
+        <div class="rounded-xl">
+          <img src="./src/joinforum.png" alt="" />
+        </div>
+      </div>
+      <!-- join us ends -->
+
+      <!--  let's post start -->
+      <div class="flex flex-col gap-5 justify-center items-center my-20">
+        <h1 class="text-5xl">Let's Post</h1>
+        <p class="text-center text-xl">
+          Yes, you can run unit tests and view the results directly within the
+          <br />
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+      <!--  let's post ends -->
     </main>
-    <footer></footer>
+
+    <footer class="p-16 bg-gray-300">
+      <div class="flex flex-col gap-5 justify-center items-center my-20">
+        <h1 class="text-5xl">ReTro</h1>
+        <p class="text-center text-xl">
+          Contrary to popular belief, Lorem Ipsum is not simply random text.
+          <br />
+          It has roots in a piece of classical Latin literature from 45 BC
+        </p>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <ul class="grid grid-cols-4 justify-around gap-5">
+          <li>facebook</li>
+          <li>twitter</li>
+          <li>instagram</li>
+          <li>github</li>
+        </ul>
+      </div>
+      <hr class="my-7" />
+      <div class="text-center text-gray-500">all rights reserved</div>
+    </footer>
 
     <!-- javascript -->
     <script src="./script.js"></script>
